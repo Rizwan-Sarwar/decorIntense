@@ -11658,7 +11658,7 @@ section.rs-collection .container .rs-heading-wrap a:hover {
     font-weight: 400;
 }
 .rs-painting-wrap .container .rs-custom-accordion {
-  border-top: 1px solid #dee2e6;
+  /* border-top: 1px solid #dee2e6; */
 }
 
 .rs-painting-wrap .container .rs-custom-accordion .accordion-item {
@@ -11975,4 +11975,132 @@ section.rs-collection .container .rs-heading-wrap a:hover {
   width: 50%;
   padding: 0px 5px;
 }
+}
+.rs-inquiry-wrap {
+    margin: 0px 0px 40px;
+    border: 1px solid #372c71;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.rs-inquiry-wrap .rs-inquiry {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+}
+
+.rs-inquiry-wrap .heading-wrap {
+}
+
+.rs-inquiry-wrap .heading-wrap h3 {
+    text-align: center;
+    background: #372c71;
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 16px 0px;
+    margin: 0px;
+}
+
+.rs-inquiry-wrap .rs-inquiry .field {
+    width: 48%;
+    margin: 0px 0px 13px;
+}
+
+.rs-inquiry-wrap .rs-inquiry .field label {
+    margin: 0px 0px;
+    font-size: 15px;
+}
+
+.rs-inquiry-wrap .rs-inquiry .field input,.rs-inquiry-wrap .rs-inquiry .field textarea {
+    padding: 0px 10px;
+    height: 32px;
+    border: 1px solid lightgray;
+    outline: unset;
+    font-size: 13px;
+    width: 100%;
+    transition: .1s ease-in-out;
+}
+.rs-inquiry-wrap .rs-inquiry .full-width {
+  width: 100%;
+}
+
+.rs-inquiry-wrap .rs-inquiry .field textarea {
+  height: 90px;
+  padding: 10px 10px;
+}
+
+.rs-inquiry-wrap .rs-inquiry .submit-wrap {
+}
+
+.rs-inquiry-wrap .rs-inquiry .submit-wrap a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #372c71;
+  color: white;
+  text-decoration: none;
+  padding: 12px 0px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.rs-inquiry-wrap .rs-inquiry .field input:hover, .rs-inquiry-wrap .rs-inquiry .field textarea:hover {
+  border: 1px solid rgb(55 44 113 / 50%);
+}
+
+.rs-inquiry-wrap .rs-inquiry .field input:focus, .rs-inquiry-wrap .rs-inquiry .field textarea:focus {
+  border: 1px solid #372c71;
+}
+.rs-inquiry-wrap .rs-inquiry .submit-wrap a:hover {
+  background-color: rgb(55 44 113 / 90%);
+}
+
+.rs-painting-wrap .container .rs-painting-details a.addToCart:hover {
+  background-color: rgb(55 44 113 / 90%);
+}
+@media (max-width: 1200px) {
+  .rs-inquiry-wrap .rs-inquiry .submit-wrap a {
+    font-size: 15px;
+  }
+  .rs-inquiry-wrap .heading-wrap h3 {
+    font-size: 20px;
+    padding: 15px 0px;
+  }
+}
+@media (max-width: 991px) {
+  .rs-inquiry-wrap .rs-inquiry .submit-wrap a {
+    font-size: 14px;
+    padding: 10px 0px;
+  }
+  .rs-inquiry-wrap .heading-wrap h3 {
+    font-size: 18px;
+    padding: 14px 0px;
+  }
+  .rs-inquiry-wrap .rs-inquiry .field label {
+    font-size: 14px;
+  }
+  .rs-inquiry-wrap .rs-inquiry .field input, .rs-inquiry-wrap .rs-inquiry .field textarea {
+    font-size: 13px;
+    padding: 0px 8px;
+  }
+  .rs-inquiry-wrap .rs-inquiry .field textarea {
+    padding: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .rs-inquiry-wrap {
+    margin: 0px 0px 40px;
+  }
+}
+@media (max-width: 599px) { 
+  .rs-inquiry-wrap {
+    margin: 0px 0px 20px;
+}
+}
+@media (max-width: 425px) {
+  .rs-inquiry-wrap .rs-inquiry .field {
+    width: 100%;
+  }
 }
